@@ -1,0 +1,11 @@
+---
+
+- name: Restart redis
+  ansible.builtin.systemd_service:
+    name: redis-server
+    state: restarted
+
+- name: Enable redis
+  ansible.builtin.systemd_service:
+    name: redis-server
+    state: restarted
